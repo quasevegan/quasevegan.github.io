@@ -49,21 +49,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGWJZN7"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<script>
-;(function () {
-  var elemento = document.querySelector('#titulo_bolo');
-  if (elemento) {
-    elemento.addEventListener('mousedown', function () {
-      dataLayer.push({
-        event: 'Evento genérico',
-        eventCategory: 'Categoria do evento',
-        eventAction: 'Ação do evento',
-        // eventLabel: 'Rótulo do evento'
-      });
-    });
-  }
-}());
-</script>
 
 <nav class="navbar main-menu navbar-default nav-fixed-height">
     <div class="container">
@@ -243,6 +228,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script type="text/javascript" src="static/js/jquery.js"></script>
 <script type="text/javascript" src="static/js/menu.js"></script>
 <script type="text/javascript" src="static/js/scripts.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#titulo_bolo').mousedown(function(){
+            dataLayer.push({
+                event: 'Evento genérico',
+                eventCategory: 'Titulo bolo - Categoria do evento',
+                eventAction: 'Titulo bolo',
+                // eventLabel: 'Rótulo do evento'
+            });
+        });
 
+        $('#ler_bolo').mousedown(function(){
+            dataLayer.push({
+                event: 'Evento genérico',
+                eventCategory: 'Ler bolo - Categoria do evento',
+                eventAction: 'Ler bolo',
+                // eventLabel: 'Rótulo do evento'
+            });
+        });
+    });
+</script>
 
 </body></html>
