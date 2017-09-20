@@ -1548,3 +1548,19 @@ p.go-back-home a:hover {
     color: #fff;
     border-color: #552B1C;
 }
+
+
+/*========
+Fixes
+==========*/
+.top-comment-fix {
+    padding: 30px 30px 60px;
+}
+
+.img-circle-fix {
+    padding: 0 15px;
+}
+
+.navbar-brand-fix {
+    height: initial !important;
+}
